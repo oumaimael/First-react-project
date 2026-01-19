@@ -1,0 +1,101 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*header and footer*/
+.navbar, .footerbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  background-color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-logo span {
+  color: #646cff;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #646cff;
+}
+
+.btn-contact {
+  background-color: #646cff;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+footer{
+  background-color: #333;
+  font-family: 'Inter', sans-serif;
+}
+.copyright {
+  margin-top: 0;  
+  font-size: 0.9rem;
+  text-align: center;
+}
+/*end header and footer*/
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
