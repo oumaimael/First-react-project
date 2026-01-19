@@ -1,5 +1,13 @@
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+      defaultWidth: "25%",
+      defaultHeight: "100%",
+  },
+});
 
 
 const InfoCard = (props) => {
@@ -8,8 +16,8 @@ const InfoCard = (props) => {
             elevation={0}
             sx={{
                 p: 4,
-                height: '100%',
-                width: "25%",
+                height: theme.palette.defaultHeight,
+                width: theme.palette.defaultWidth,
                 borderRadius: 4,
                 background: 'rgba(255, 255, 255, 0.03)',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
